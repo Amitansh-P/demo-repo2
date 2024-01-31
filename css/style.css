@@ -43,6 +43,22 @@ a:visited{
     margin: auto;
 }
 
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border:none;
+}
+
+.button:hover{
+    background: red;
+    color: #fff;
+}
+
+.clr{
+    clear: both;
+}
+
 .box-1{
     background-color: #333;
     color: #fff;
@@ -106,3 +122,47 @@ a:visited{
     border-bottom: dotted 1px #333;
     list-style-image: url('../images/check.png');
 }
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+/*using type= text to seperate out submit button*/
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.block{  /*I can use flex box also*/
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* I need to continue from positining in css 57:17, 
