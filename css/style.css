@@ -165,4 +165,49 @@ a:visited{
     box-sizing: border-box;
 }
 
-/* I need to continue from positining in css 57:17, 
+/*positioning in css*/
+.p-box{ 
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative; /*use this position:relative to use h1 tag in p-box area only*/
+    background-image: url('../images/bgimage.jpg'); /*background image positioning*/
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-box h1{
+    position: absolute; /*it set the h1 to position top 40 absolute (by using relative we can specify the positon in boxes)*/
+    top: 40px;
+    left: 200px; /*position left to 200*/
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+/*sudo classes*/
+.my-list :first-child{ /* : use for scope to sudo elements*/
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellowgreen;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}
